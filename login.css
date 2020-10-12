@@ -1,0 +1,38 @@
+.logo img {
+        width: 120px;
+        height: 70px;
+        border-radius: 60px;
+         }
+
+.total {
+        background-color: tan;
+        }
+.contenedor  {
+            margin:150px auto;
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+            }
+
+.imagen {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjalwoxNi-vVFisQld-OrTjev4b6RcEo19cg&usqp=CAU");
+        align-items: center;
+        display: flex;
+        border-radius:6px 0px  0px  6px;
+        flex: 0.15;
+        }
+
+.info {
+      background-color: peru;
+      align-items: center;
+      justify-content: start;
+      text-align: start;
+      display: flex;
+      border-radius:0px 6px  6px  0px;
+      width: 180px;
+      }
+
+.info  button {
+               background-color: royalblue;
+               border-radius: 6px;
+               }

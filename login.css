@@ -8,7 +8,7 @@
         background-color: tan;
         }
 .contenedor  {
-            margin:150px auto;
+            margin:102px auto;
             display: flex;
             justify-content: center;
             font-size: x-large;
@@ -36,3 +36,7 @@
                background-color: royalblue;
                border-radius: 6px;
                }
+.mex {
+      text-align: center;
+      /*centro el contenido mex*/
+      }

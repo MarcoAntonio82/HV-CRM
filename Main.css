@@ -1,17 +1,18 @@
-.total{
-     background-color: tan;
-     }
+.total {
+       background-color: tan;
+       }
+
 .navbar {
         font-size: x-large;
         font-weight: 700;
         margin-top: 0px;
         height: 30%;
-        
+        display: block;
         }
+
 .nav-link:hover {
                 background-color: darksalmon;  
                 border-radius: 3px;
-                
                 }
 .contenido {
            margin-top: 0%;
@@ -20,23 +21,33 @@
            justify-items:center;/*centro el contenido*/
            gap: 15px 10px;
            border: 1px solid rebeccapurple;
-           
            }
+
 .alta,.estatus,.actualizar,.demo {
       margin-top: 6px;
       display: grid; 
       justify-items: center; 
       background-color: yellow;
+      font-size: large;
       opacity: 0.5;
       width: 60%;
+      border-radius: 6px;
       }
+
+.alta:hover  input, .demo:hover input, .estatus:hover input, .actualizar:hover input {
+                     visibility: visible;
+                     background-color: turquoise;
+                     }
+
 
 
 .alta input,.estatus input,.actualizar input,.demo input {
             width: 100%;/*tip x centrar*/
             margin-left: auto; 
             margin-right: auto;
+            border-radius: 6px;
+            visibility: hidden;
+            text-decoration: none;
             }
-
 
 

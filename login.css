@@ -1,42 +1,101 @@
+/*logo*/
+ .logo {
+       display: flex;  /*lo hago flex para alinearlo*/
+       flex-direction: row;
+       /*justify-content: center;*/
+       }
+      
 .logo img {
-        width: 120px;
-        height: 70px;
-        border-radius: 60px;
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         border: .05px solid rgb(101, 193, 224);
         }
-
-.total {
-        background-color:rgb(219, 207, 191);
+.logo h1 {
+         margin-left: 35%;
+         /*text-align: end; no sirve x que no es hijo div
+         justify-items: end;
+         align-self: end;*/
+         color: skyblue;
+         margin: 30px 460px 0 460px;
+        /* margin-bottom:-15px;*/
+         font-family: sans-serif;
+         /*border:1px solid red;*/
+         /*border-bottom: 3px solid rgb(101, 193, 224);*/
+         font-weight: 750;
+        /* margin-top: 48px;*/
+         }
+ /*body*/       
+.total  {
+        background-color:#ffffff;
         }
-.contenedor  {
-            margin:102px auto;
+hr {
+   height: 3px;   
+   background-color:rgb(101, 193, 224) ;  
+   }
+.contenedor {
             display: flex;
             justify-content: center;
+            align-items: center;/*alinia los items*/
+            flex-direction: column;
             font-size: x-large;
+            margin-left: auto;
+            margin-right: auto;
             }
+.contenedor img {
+                border-radius: 50px;
+                border: 1px solid rgb(101, 193, 224);
+                width: 40%;
+                height: 75px;
+                display: flex;
+                margin-left: 30%;
+                margin-bottom: -30px;
+                }
 
-.imagen {
-        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSjalwoxNi-vVFisQld-OrTjev4b6RcEo19cg&usqp=CAU");
-        align-items: center;
-        display: flex;
-        border-radius:6px 0px  0px  6px;
-        flex: 0.15;
-        }
-
+/*informacion de usuario*/
 .info {
-      background-color: peru;
-      align-items: center;
-      justify-content: start;
-      text-align: start;
+      background-color:rgb(101, 193, 224);
       display: flex;
-      border-radius:0px 6px  6px  0px;
-      width: 180px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: 800;
+      /*text-align: start; lo hace al principio el texto*/
+      display: flex;
+      border-radius:6px;
+      width: /*220px*/20%;
+      margin: 15px 15px;
       }
 
-.info  button {
+
+.info  button, a {
                background-color: royalblue;
                border-radius: 6px;
+               text-decoration: none;
+               margin: 15px 15px;
                }
+.info input{
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 560;
+}               
 .mex {
       text-align: center;
       /*centro el contenido mex*/
       }
+
+/*responsive*/      
+@media (max-width: 575px) {
+.logo {
+      display: flex;
+      flex-direction: row;  
+      }
+.logo h1 {
+         margin-left: 60px;
+         text-align: center;
+         }
+.info {
+      width: 70%;
+      }        
+}

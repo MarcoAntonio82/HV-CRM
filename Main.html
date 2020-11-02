@@ -11,7 +11,8 @@
 </head>
 <body class="total"> 
     <!---NavBar------->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-primary">-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgb(101, 193, 224)">
          <header class="logo"> 
              <figure>
                  <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTqKft6OPJTFKkiBO3QtA8cVc4Bh4R0t2ZYnw&usqp=CAU"" alt="">
@@ -21,60 +22,72 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto "><!--mx-auto para centrar-->
+            <div class="navbar-nav mx-auto "><!--mx-auto para centrar---->
                 <a class="nav-link" href="login.html">Inicio</a>
-                <a class="nav-link" href="#">Altas</a>
-                <a class="nav-link" href="#">Estatus</a>
-                <a class="nav-link" href="#">Actualizaciones</a>
-                <a class="nav-link" href="#">Reportes</a> 
+                <a class="nav-link" href="">Alta</a>
+                <a class="nav-link" href="#">Reporte</a> 
+                <a class="nav-link" href="#">Desempeño</a>
             </div>
         </div>
       </nav>
-      <!---NavBar--------->
+      
+<!---contenedor Padre-->     
 <section class="contenido">
         
+      <!--hijos------------->
        <div class="alta">
-            <a href="" style="text-decoration: none;">Alta</a> 
-            <form action="">
-               <input type="text" placeholder="Nombre">
-               <input type="text " placeholder="Celular">
-               <input type="text " placeholder="Correo">
-               <input type="text " placeholder="Info adicional">
-            </form>
+          <form action="">
+                <a href="" style="text-decoration: none;">Alta</a> 
+                <input type="text" placeholder="Nombre">     
+                <input type="text " placeholder="Celular">
+                <input type="text " placeholder="Correo">
+                <input type="text " placeholder="Info adicional">
+           </form>
+              
+                 <img src="https://us.123rf.com/450wm/rastudio/rastudio1512/rastudio151206083/49884960-icono-de-l%C3%ADnea-de-informe-m%C3%A9dico-para-web-m%C3%B3vil-y-la-infograf%C3%ADa-vector-icono-blanco-sobre-el-c%C3%ADrculo-azul-de-lu.jpg?ver=6" alt=""> 
+        
+        </div>
+
+      <div class="estatus">
+          <form  action="">
+                <a href="" style="text-decoration: none;">Estatus</a>
+                <input type="text" placeholder="Potencial">
+                <input type="text " placeholder="No Potencial">
+                <input type="text " placeholder="Intermedio">
+                <input type="text " placeholder="No Interesado">
+          </form>
+               <img src="https://us.123rf.com/450wm/rastudio/rastudio1512/rastudio151206083/49884960-icono-de-l%C3%ADnea-de-informe-m%C3%A9dico-para-web-m%C3%B3vil-y-la-infograf%C3%ADa-vector-icono-blanco-sobre-el-c%C3%ADrculo-azul-de-lu.jpg?ver=6" alt="" >
         </div>
         
-        <div class="estatus">
-            <a href="" style="text-decoration: none;">Estatus</a>
-            <form  action="">
-                <input type="text" placeholder="1er Contacto">
-               <input type="text " placeholder="2do Contacto">
-               <input type="text " placeholder="Prospecto Favorable">
-               <input type="text " placeholder="Rechazar Prospecto">
-             </form>
-        </div>
-        
-        <div class="actualizar">
-              <a href="" style="text-decoration: none;">Actualizar</a>
-            <form action="">
+    <div class="actualizar">
+           <form action="">
+                <a href="" style="text-decoration: none;">Actualizar</a>         
                 <input type="text" placeholder="Nombre">
-               <input type="text " placeholder="Celular">
-               <input type="text " placeholder="Correo">
-               <input type="text " placeholder="Info adicional">
-             </form>
-       </div>
+                <input type="text " placeholder="Celular">
+                <input type="text " placeholder="Correo">
+                <input type="text " placeholder="Info adicional">  
+            </form>
+               <img src="https://us.123rf.com/450wm/rastudio/rastudio1512/rastudio151206083/49884960-icono-de-l%C3%ADnea-de-informe-m%C3%A9dico-para-web-m%C3%B3vil-y-la-infograf%C3%ADa-vector-icono-blanco-sobre-el-c%C3%ADrculo-azul-de-lu.jpg?ver=6" alt="">
+    </div>
        
-       <div class="demo">
-        <a href="" style="text-decoration: none;">Fuente de Origen</a>
-        <form action="">
-            <input type="text" placeholder="Web">
+   <div class="demo">
+         <form action="">
+               <a href="" style="text-decoration: none;">Fuente de Origen</a>
+               <input type="text" placeholder="Web">
                <input type="text " placeholder="Redes">
                <input type="text " placeholder="Ubicacion">
                <input type="text " placeholder="Recomendado">
-         </form>  
-        </div>
+          </form>
+            <img src="https://us.123rf.com/450wm/rastudio/rastudio1512/rastudio151206083/49884960-icono-de-l%C3%ADnea-de-informe-m%C3%A9dico-para-web-m%C3%B3vil-y-la-infograf%C3%ADa-vector-icono-blanco-sobre-el-c%C3%ADrculo-azul-de-lu.jpg?ver=6" alt="" >
+          </div>
 </section>
+
+<!----boton enviar-->
+      <div class="enviar">
+          <button>Enviar Info</button>
+      </div>
  
-<!---logo hecho en mexico-->
+<!---logo hecho en mexico svg-->
 <footer class="mex">
     <!---logo hecho en mexico-->
     <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120pt" height="80pt" viewBox="0 0 460.8 394.2" version="1.1">
@@ -111,6 +124,22 @@
         </g>
         </svg>
 </footer>
+<!---para que despliegue el menu-->
+<script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"
+    ></script>
 
     
 </body>

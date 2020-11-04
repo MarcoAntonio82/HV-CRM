@@ -85,7 +85,7 @@ hr {
       /*centro el contenido mex*/
       }
 
-/*responsive*/      
+/*responsive se genera en sass para modularidad sf   
 @media (max-width: 575px) {
 .logo {
       display: flex;
@@ -98,4 +98,4 @@ hr {
 .info {
       width: 70%;
       }        
-}
+}*/

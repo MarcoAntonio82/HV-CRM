@@ -1,17 +1,18 @@
 /*barra de navegacion*/
-.navbar {
+
+/*.navbar { ya esta en sass-----------
         font-size: xx-large;
         font-weight: 900;
         margin-top: 0px;
         height: 30%;
         display: block;
         font-family: sans-serif;
-        }
+        }*/
 
-.nav-link:hover {
-                border-bottom: 3px solid #ffffff;/*para poner el borde de abajo*/
-                border-radius: 1px;
-                }
+/* .nav-link:hover {
+                border-bottom: 3px solid #ffffff; *//*para poner el borde de abajo*/
+                /*border-radius: 1px;
+                } */
 
  /*grid para el contenido padre*/
 .contenido {
@@ -87,10 +88,11 @@
               font-family: sans-serif;
               font-size: large;
               }
-/*responsive*/
+/*responsive se genera en sass la parte resposive x modularidad 
 @media (max-width: 575px) {
 .contenido {
          display: flex;
          flex-direction: column;
-}
-}
+         max-width: 575;
+         }
+}*/

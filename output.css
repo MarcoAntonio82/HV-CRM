@@ -1,0 +1,41 @@
+@media (max-width: 575px) {
+  /*****login responsive******/
+  .logo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo h1 {
+    margin-left: 60px;
+    text-align: center;
+  }
+
+  .info {
+    width: 70%;
+  }
+
+  /*****main responsive******/
+  .contenido {
+    display: flex;
+    flex-direction: column;
+    max-width: 575;
+  }
+}
+/*la barra de navegacion*/
+.navbar {
+  font-size: xx-large;
+  font-weight: 900;
+  margin-top: 0px;
+  height: 30%;
+  display: block;
+  font-family: sans-serif;
+}
+
+.nav-link:hover {
+  border-bottom: 3px solid #ffffff;
+  border-radius: 1px;
+}
+
+/*controlo todos los _partial*/
+
+/*# sourceMappingURL=output.css.map */

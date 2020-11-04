@@ -1,0 +1,13 @@
+/*la barra de navegacion*/
+.navbar {
+        font-size: xx-large;
+        font-weight: 900;
+        margin-top: 0px;
+        height: 30%;
+        display: block;
+        font-family: sans-serif;
+        }
+.nav-link:hover {
+                border-bottom: 3px solid #ffffff; //*para poner el borde de abajo*/
+                border-radius: 1px;
+                } 

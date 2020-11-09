@@ -39,16 +39,18 @@
 /*hijos del grid usando flex-direction row*/
 .alta,.estatus,.actualizar,.demo {                           
                                  font-weight: 600;
-                                 margin-top: 6px;
+                                 margin-top: 120px;
                                  align-items: center;
                                  justify-items: center; 
                                  background-color: #ffffff;
                                  font-size: large;
                                  opacity: 0.5;
                                  width: 70%;
+                                 overflow: none;
                                  border-radius: 6px;
                                  display: flex;
                                  flex-direction: row;/*cambio direcion*/
+                                 /*para que no tape la barra en el eje z*/
                                 }
  /*tamaño de iamgen*/                               
 .alta img,.estatus img,.actualizar img,.demo img {
@@ -67,7 +69,7 @@
             margin-left: auto; 
             margin-right: auto;
             border-radius: 6px;
-            visibility: hidden;
+            /*visibility: hidden;*/
             text-decoration: none;
             }
 
@@ -92,7 +94,20 @@
 @media (max-width: 575px) {
 .contenido {
          display: flex;
-         flex-direction: column;
+         flex-direction: column;.
          max-width: 575;
          }
 }*/
+.carru {
+        margin-top: 10px;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        }
+.carousel-item  img {
+                 /*height:vh;*/
+                 border-radius: 6px;
+                 }
+.carousel-item p {
+              font-weight: 700;
+}                            

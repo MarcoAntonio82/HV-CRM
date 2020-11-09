@@ -1,13 +1,21 @@
 /*la barra de navegacion*/
-.navbar {
+.navbar .nav-link {
         font-size: xx-large;
         font-weight: 900;
         margin-top: 0px;
         height: 30%;
         display: block;
+        width: 100%;
         font-family: sans-serif;
         }
+
 .nav-link:hover {
-                border-bottom: 3px solid #ffffff; //*para poner el borde de abajo*/
-                border-radius: 1px;
-                } 
+                 border-bottom: 3px solid #ffffff; //*para poner el borde de abajo*/
+                 border-radius: 3px;
+                 line-height: normal;/*x corregir*/
+                 } 
+.barra  {/*section x la barra*/
+        position: fixed;
+        width: 100%;
+        z-index: 1;/*esto queda arriba barra en eje z*/        
+        }

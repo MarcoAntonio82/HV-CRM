@@ -1,36 +1,30 @@
 /*logo*/
+
  .logo {
        display: flex;  /*lo hago flex para alinearlo*/
        flex-direction: row;
-       /*justify-content: center;*/
+       align-self: center;
+       justify-content: space-around;/*para que se vea centrado el contenido*/
        }
-      
+
 .logo img {
-         width: 60px;
-         height: 60px;
-         border-radius: 50%;
-         border: .05px solid rgb(101, 193, 224);
-        }
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          border: .05px solid rgb(101, 193, 224);
+         }
 .logo h1 {
-         margin-left: 35%;
-         /*text-align: end; no sirve x que no es hijo div
-         justify-items: end;
-         align-self: end;*/
          color: skyblue;
-         margin: 30px 460px 0 460px;
-        /* margin-bottom:-15px;*/
+         margin: 30px 5px;
          font-family: sans-serif;
-         /*border:1px solid red;*/
-         /*border-bottom: 3px solid rgb(101, 193, 224);*/
          font-weight: 750;
-        /* margin-top: 48px;*/
          }
  /*body*/       
 .total  {
         background-color:#ffffff;
         }
 hr {
-   height: 3px;   
+   height: 2px;   
    background-color:rgb(101, 193, 224) ;  
    }
 .contenedor {
@@ -39,8 +33,8 @@ hr {
             align-items: center;/*alinia los items*/
             flex-direction: column;
             font-size: x-large;
-            margin-left: auto;
-            margin-right: auto;
+            height: 70vh;
+           
             }
 .contenedor img {
                 border-radius: 50px;
@@ -54,19 +48,21 @@ hr {
 
 /*informacion de usuario*/
 .info {
-      background-color:rgb(101, 193, 224);
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       text-align: center;
       font-family: sans-serif;
       font-weight: 800;
-      /*text-align: start; lo hace al principio el texto*/
-      display: flex;
       border-radius:6px;
-      width: /*220px*/20%;
-      margin: 15px 15px;
+      height: 40vh;/*view horizontal*/
+      width: 30%;
+      margin: 80px 80px;
+     
       }
+.info:hover{/*x la sombra */
+           box-shadow: 0 4px 8px 0 rgb(101, 193, 224), 0 6px 20px 0 #ffffff;
+           }
 
 
 .info  button, a {
@@ -76,10 +72,19 @@ hr {
                margin: 15px 15px;
                }
 .info input{
-            border-radius: 6px;
+            width: 90%; 
+            border-top:1px;
+            border-left: 0;
+            border-right: 0;         
             text-align: center;
             font-weight: 560;
-}               
+            }
+ .info input:focus {
+                   outline:1px solid #ffffff;
+                   border-bottom:3px solid rgb(101, 193, 224);
+                   border-left: 0;
+                   border-right: 0; 
+                  }                         
 .mex {
       text-align: center;
       /*centro el contenido mex*/
@@ -87,15 +92,3 @@ hr {
 
 /*responsive se genera en sass para modularidad sf   
 @media (max-width: 575px) {
-.logo {
-      display: flex;
-      flex-direction: row;  
-      }
-.logo h1 {
-         margin-left: 60px;
-         text-align: center;
-         }
-.info {
-      width: 70%;
-      }        
-}*/

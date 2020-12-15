@@ -45,9 +45,6 @@ const totalesCap = (x,z)=>{
     }  
 
 
-
-
-
 //events                                  // x que no se actaulice la web
 ingresosTotales.addEventListener("click",(event)=>{event.preventDefault()
     const infoOne = parseInt(ingreso.value)
@@ -63,8 +60,8 @@ capacidadPago.addEventListener("click",(event)=>{event.preventDefault()
     })
     
 enviarx.addEventListener("click",()=>{
-    const nombreY = nombrex.value;
-    const celuraY = parseInt(celularx.value);
+const nombreY = nombrex.value;
+const celuraY = parseInt(celularx.value);
 const correoY = correox.value;
 const infoY = infox.value;
 
@@ -88,10 +85,10 @@ return datoClientex.innerHTML=`<p>${nombreY}</p>
     <p>${pagoFinal}</p>`
      })
 
-//lo desarrolle Mark  
+//lo desarrolle Mark  duda x la clase
 resumen.addEventListener("click",()=>{
      const datos= []
-     const meter = datos.push(datoClientex.innerHTML)
+     const meter = datos.push(datoClientex.innerHTML)//
        return clientes.innerHTML+=`<p>${datos}</p>`
       })
   
@@ -100,7 +97,48 @@ resumen.addEventListener("click",()=>{
     const salir = sinInfo.pop(datoClientex.innerHTML) 
     return clientes.innerHTML=`<p>${sinInfo}</p>`
     })
-    
+
+
+
+ //graficas
+ let ctx = document.getElementById('myChart').getContext('2d');
+ let myChart = new Chart(ctx, {
+     type: 'bar',
+     data: {
+         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+         datasets: [{
+             label: '# of Votes',
+             data: [12, 19, 3, 5, 2, 3],
+             backgroundColor: [
+                 'rgba(255, 99, 132, 0.2)',
+                 'rgba(54, 162, 235, 0.2)',
+                 'rgba(255, 206, 86, 0.2)',
+                 'rgba(75, 192, 192, 0.2)',
+                 'rgba(153, 102, 255, 0.2)',
+                 'rgba(255, 159, 64, 0.2)'
+             ],
+             borderColor: [
+                 'rgba(255, 99, 132, 1)',
+                 'rgba(54, 162, 235, 1)',
+                 'rgba(255, 206, 86, 1)',
+                 'rgba(75, 192, 192, 1)',
+                 'rgba(153, 102, 255, 1)',
+                 'rgba(255, 159, 64, 1)'
+             ],
+             borderWidth: 1
+         }]
+     },
+     options: {
+         scales: {
+             yAxes: [{
+                 ticks: {
+                     beginAtZero: true
+                 }
+             }]
+         }
+     }
+ });
+
 
 // const info = []
 // const dato = info.push('juan');

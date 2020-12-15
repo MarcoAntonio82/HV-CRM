@@ -16,6 +16,7 @@
 
  /*grid para el contenido padre*/
 .contenido {
+           background-color: red;
            margin-top: 0%;
            display: grid;
            grid-template: repeat(2, 1fr) / repeat(2, 1fr);/*creo los 4 grids*/

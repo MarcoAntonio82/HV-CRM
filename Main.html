@@ -59,10 +59,10 @@
 
       <div class="estatus">
           <form  action="">
-                <a href="" style="text-decoration: none;">Estatus</a>
+                <a href="" style="text-decoration: none;">Interes de Compra</a>
                 <input id="potencial" type="text" placeholder="Potencial">
                 <input id="noPotencial" type="text " placeholder="No Potencial">
-                <input id="intermedio" type="text " placeholder="Intermedio">
+                <input id="intermedio" type="text " placeholder="Interesado">
                 <input id="noIntersado" type="text " placeholder="No Interesado">
           </form>
                <img src="status.svg" alt="" style="width: 80%;" >
@@ -85,11 +85,12 @@
     <div class="actualizar">
            <form action="">
                 <a href="" style="text-decoration: none;">Calculo de Ingresos</a>         
-                <input id="ingreso" type="text" placeholder="Ingresos" >
+                <input id="ingreso" type="text" placeholder="Ingresos">
                 <input id="gastos" type="text"  placeholder="Gastos">
                 
                 <button id="ingresoTotal">Ingreso Total</button>
                 <p id="showTotal">Tu Ingreso Real</p>
+                
                 
                 <button id="capacidadPago">Capacidad de Pago</button>
                 <p id="paidCap">Tu Capacidad de Pago</p>
@@ -107,15 +108,20 @@
       <div id="enviar" class="enviar">
           <button>Datos Proporcionados</button>
           <div id="datoClientes">
-      </div>
+          </div>
       
       <button id="resumen">Agrega Cliente</button>
       <button id="sinDato">Quitar Clientes</button>
       
         <div id="clientes">
-      </div>
+       </div>
 
      </div>
+     
+     
+    <div style="width: 40%; margin: 0 auto;" >
+      <canvas id="myChart" width="400" height="400"></canvas>
+   </div>  
         
 <!---carrusel-->
          
@@ -240,7 +246,10 @@ function scrollFunction(){
     crossorigin="anonymous"
     ></script>
     
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
     <script src="Main.js"></script>
+    
     
 </body>
 </html>

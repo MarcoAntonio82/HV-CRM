@@ -45,26 +45,100 @@ const totalesCap = (x,z)=>{
     }  
 
 
-
-
-
 //events                                  // x que no se actaulice la web
 ingresosTotales.addEventListener("click",(event)=>{event.preventDefault()
     const infoOne = parseInt(ingreso.value)
     const infoDos = parseInt(gastos.value)
     const totalesResu = totalesIngre(infoOne,infoDos)
+    //grafica 
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Ingresos', 'Gastos', 'Grabable',],
+                datasets: [{
+                    label: '# Ingresos',
+                    data: [infoOne,infoDos,totalesResu],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
     return showTotal.innerHTML=totalesResu;
     })
+
 capacidadPago.addEventListener("click",(event)=>{event.preventDefault()
     const infoOne = parseInt(ingreso.value)
     const infoDos = parseInt(gastos.value)
     const totalesCapix = totalesCap(infoOne,infoDos)
+    //grafica
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Ingresos', 'Gastos', 'Capacidad',],
+                datasets: [{
+                    label: '# Capacidad Pago',
+                    data: [infoOne,infoDos,totalesCapix],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    
     return paidCap.innerHTML=totalesCapix;
     })
     
+
+
+    
 enviarx.addEventListener("click",()=>{
-    const nombreY = nombrex.value;
-    const celuraY = parseInt(celularx.value);
+const nombreY = nombrex.value;
+const celuraY = parseInt(celularx.value);
 const correoY = correox.value;
 const infoY = infox.value;
 
@@ -102,10 +176,9 @@ resumen.addEventListener("click",()=>{
     })
     
 
-// const info = []
-// const dato = info.push('juan');
-// console.log(info)
 
+    
+    
 
 
 

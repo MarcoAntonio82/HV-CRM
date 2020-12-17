@@ -20,11 +20,11 @@
            display: grid;
            grid-template: repeat(2, 1fr) / repeat(2, 1fr);/*creo los 4 grids*/
            justify-items: center;
-           justify-content: center;
-           margin-left: auto;
-           margin-right: auto;
+           row-gap: 0%;
+           padding: 1rem;
+           margin: 0 auto;
            border: 1px solid rgb(101, 193, 224);
-           width: 85%;
+           width: 80%;
            text-align: center;
            box-sizing: border-box;
            }
@@ -37,13 +37,12 @@
              }
 
 /*hijos del grid usando flex-direction row*/
-.alta,.estatus,.actualizar,.demo {                          
+.alta,.estatus,.actualizar,.demo {                 
                                  font-weight: 600;
                                  margin-top: 160px;
                                  margin-bottom: 10px;
                                  background-color: #ffffff;
                                  font-size: large;
-                                 gap: 1rem 2rem;
                                  opacity: 0.5;
                                  width: 90%;
                                  text-align: center;
@@ -77,20 +76,21 @@
 
 /*boton de enviar*/
 .enviar {
-        text-align: center;
-        width: 70%;
+        text-align:center;
+        width: 80%;
         margin-top: 8px;
         border: 1px solid rgb(101, 193, 224);
         margin-right: auto;
         margin-left: auto;
         }
 .enviar button {
-              margin: 10px 10px;
+              margin: 1% auto;
               background-color: rgb(101, 193, 224);
               border-radius: 4px;
               font-weight: 600;
               font-family: sans-serif;
               font-size: large;
+              display: inline-block;
               }
 /*responsive se genera en sass la parte resposive x modularidad 
 @media (max-width: 575px) {
@@ -103,8 +103,7 @@
 .carru {
         margin-top: 10px;
         width: 50%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
         }
 .carousel-item  img {
                  /*height:vh;*/

@@ -35,8 +35,6 @@ const sinDato = document.getElementById("sinDato")
 
 
 //functions
-
-
 const totalesIngre = (x,z)=>{
     return x-z
     }
@@ -101,7 +99,7 @@ capacidadPago.addEventListener("click",(event)=>{event.preventDefault()
                 labels: ['Ingresos', 'Gastos', 'Capacidad',],
                 datasets: [{
                     label: '# Capacidad Pago',
-                    data: [infoOne,infoDos,totalesCapix],
+                    data: [infoOne,infoDos,totalesCapix],//paso objetos 
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',

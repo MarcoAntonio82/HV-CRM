@@ -1,26 +1,18 @@
-@media (max-width: 575px)
+@media (max-width: 425px)
        {
  /*****login responsive******/  
- 
-.logo   {
-        display: flex;
-        flex-direction: row;  
-        }
-.logo h1 {
-          margin-left: 40px;
-          text-align: center;
-          }
 .info {
       width: 50%;
       }     
 
 /*****main responsive******/
-.contenido {
-            display: flex;
-            flex-direction: column;
-            max-width: 575;
-            } 
-           }
+
+.contenido{
+      display: flex;
+      flex-direction: column;
+      }
 
 
-  
+     }
+
+ 

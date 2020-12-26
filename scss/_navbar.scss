@@ -1,21 +1,40 @@
 /*la barra de navegacion*/
+
 .navbar .nav-link {
         font-size: xx-large;
         font-weight: 900;
         margin-top: 0px;
-        height: 30%;
+        height: 10%;
         display: block;
-        width: 100%;
+        width: 40%;
         font-family: sans-serif;
         }
-
+.navbar button{
+      background-color:#ffff;
+      } 
+.navbar button:focus{/*x quitra el foco*/
+        outline: none;
+        }
+      
 .nav-link:hover {
-                 border-bottom: 3px solid #ffffff; //*para poner el borde de abajo*/
+                 border-bottom: 3px solid white; //*para poner el borde de abajo*/
                  border-radius: 3px;
                  line-height: normal;/*x corregir*/
-                 } 
-.barra  {/*section x la barra*/
+                 }
+
+                 
+.barra {/*section x la barra*/
         position: fixed;
         width: 100%;
         z-index: 1;/*esto queda arriba barra en eje z*/        
         }
+/*$ sass --watch scss/main.scss output.css*/
+
+.navbar-toggler-icon:hover{
+        transform: rotate(90deg);
+        transition:all 0.5s;
+        } 
+.navbar-collapse{
+        z-index: 1;
+        background-color: red;
+} 

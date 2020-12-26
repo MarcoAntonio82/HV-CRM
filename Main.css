@@ -1,22 +1,6 @@
-/*barra de navegacion*/
 
-/*.navbar { ya esta en sass-----------
-        font-size: xx-large;
-        font-weight: 900;
-        margin-top: 0px;
-        height: 30%;
-        display: block;
-        font-family: sans-serif;
-        }*/
-
-/* .nav-link:hover { ya esta en sass 
-                border-bottom: 3px solid #ffffff; *//*para poner el borde de abajo*/
-                /*border-radius: 1px;
-                } */
-
- /*grid para el contenido padre*/
+ 
 .contenido {
-           margin-top: 0%;
            display: grid;
            grid-template: repeat(2, 1fr) / repeat(2, 1fr);/*creo los 4 grids*/
            justify-items: center;
@@ -24,7 +8,7 @@
            padding: 1rem;
            margin: 0 auto;
            border: 1px solid rgb(101, 193, 224);
-           width: 80%;
+           width: 90%;
            text-align: center;
            box-sizing: border-box;
            }
@@ -39,19 +23,17 @@
 /*hijos del grid usando flex-direction row*/
 .alta,.estatus,.actualizar,.demo {                 
                                  font-weight: 600;
-                                 margin-top: 160px;
-                                 margin-bottom: 10px;
+                                 margin-top:35%;
                                  background-color: #ffffff;
                                  font-size: large;
                                  opacity: 0.5;
-                                 width: 90%;
+                                 width:90%;
                                  text-align: center;
                                  border-radius: 6px;
                                  display: flex;
                                  flex-direction: row;/*cambio direcion*/
                                  /*para que no tape la barra en el eje z*/
-
-                                }
+                                 }
  /*tamaño de iamgen*/                               
 .alta img,.estatus img,.actualizar img,.demo img {
           width: 30%;
@@ -100,15 +82,18 @@
          max-width: 575;
          }
 }*/
-.carru {
+.carru *{/*todo lo que esta adentro*/
         margin-top: 10px;
-        width: 50%;
-        margin: 0 auto;
+        width: 70%;
+        margin:3% auto;
+        z-index: -1; 
         }
+
+     
 .carousel-item  img {
                  /*height:vh;*/
                  border-radius: 6px;
                  }
 .carousel-item p {
               font-weight: 700;
-}                            
+               }                                      

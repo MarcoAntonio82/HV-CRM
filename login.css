@@ -58,7 +58,6 @@ hr {
       height: 40vh;/*view horizontal*/
       width: 18%;
       margin: 80px 80px;
-     
       }
 .info:hover{/*x la sombra */
            box-shadow: 0 4px 8px 0 rgb(101, 193, 224), 0 6px 20px 0 #ffffff;
